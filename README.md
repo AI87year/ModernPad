@@ -1,59 +1,59 @@
 # ModernPad
 
-**ModernPad** — это попытка создать современный нативный текстовый и кодовый редактор для Windows, вдохновлённый философией и удобством Notepad++.
+**ModernPad** is an attempt to create a modern native text and code editor for Windows, inspired by the philosophy and usability of Notepad++.
 
-Проект разрабатывается с активным использованием искусственного интеллекта. Цель — не просто повторить старый редактор, а переосмыслить его с использованием современных технологий Windows, сохранив при этом лёгкость, скорость и привычный workflow.
+The project is being developed with active use of artificial intelligence. The goal is not just to replicate an old editor, but to reimagine it using modern Windows technologies while keeping its lightness, speed, and familiar workflow.
 
-## Идея проекта
+## Project Idea
 
-Notepad++ уже много лет остаётся одним из самых любимых редакторов среди разработчиков благодаря своей простоте, скорости и богатым возможностям. Однако он построен на классическом Win32 API, который уже устарел.
+Notepad++ has remained one of the most beloved editors among developers for many years due to its simplicity, speed, and rich capabilities. However, it is built on the classic Win32 API, which is now outdated.
 
-**ModernPad** — это попытка создать редактор, который:
-- Использует современный стек Windows (WinUI 3 + Windows App SDK)
-- Предоставляет нативный опыт Windows 11 (Fluent Design, Mica, Acrylic, современные анимации)
-- Сохраняет дух Notepad++: лёгкость, скорость, удобство работы с вкладками и кодом
-- Разрабатывается с помощью ИИ, чтобы ускорить создание и экспериментировать с архитектурой
+**ModernPad** aims to create an editor that:
+- Uses the modern Windows stack (WinUI 3 + Windows App SDK)
+- Provides a native Windows 11 experience (Fluent Design, Mica, Acrylic, modern animations)
+- Preserves the spirit of Notepad++: lightness, speed, and convenient tabbed code editing
+- Is developed with AI assistance to accelerate creation and experiment with architecture
 
-## Технологии
+## Technologies
 
-- **WinUI 3** + **Windows App SDK** — современный UI-фреймворк от Microsoft
+- **WinUI 3** + **Windows App SDK** — modern UI framework from Microsoft
 - **.NET 8**
-- **WebView2** + **Monaco Editor** — для мощного редактирования кода с подсветкой синтаксиса
+- **WebView2** + **Monaco Editor** — for powerful code editing with syntax highlighting
 - C# / XAML
 
-## Особенности подхода
+## Approach
 
-- Максимальное использование нативных возможностей Windows 11
-- Чистая и поддерживаемая архитектура
-- Разработка с активным участием ИИ (архитектура, генерация кода, рефакторинг)
-- Открытый исходный код (MIT)
+- Maximum use of native Windows 11 capabilities
+- Clean and maintainable architecture
+- Development with active AI participation (architecture, code generation, refactoring)
+- Open source (MIT license)
 
-## Текущий статус
+## Current Status
 
-Проект находится на ранней стадии разработки. Сейчас идёт работа над базовой архитектурой:
-- Система вкладок
-- Меню
-- Интеграция редактора кода (Monaco)
-- Работа с файлами
+The project is in an early development stage. Work is currently focused on the basic architecture:
+- Tab system
+- Menu
+- Code editor integration (Monaco)
+- File handling
 
 ## Roadmap
 
-- [x] Базовый интерфейс на WinUI 3
-- [x] Система вкладок
-- [ ] Полноценная интеграция Monaco Editor
-- [ ] Открытие и сохранение файлов
-- [ ] Переключение языка подсветки синтаксиса
-- [ ] Тёмная/светлая тема + Mica
-- [ ] Локализация (Русский + English)
-- [ ] Настройки
+- [x] Basic WinUI 3 interface
+- [x] Tab system
+- [ ] Full Monaco Editor integration
+- [ ] File open / save functionality
+- [ ] Syntax highlighting language switching
+- [ ] Dark/light theme + Mica backdrop
+- [ ] Localization (English + Russian)
+- [ ] Settings
 - [ ] Find & Replace
 
-## Лицензия
+## License
 
-Проект распространяется под лицензией **MIT**.
+This project is licensed under the **MIT License**.
 
-## Разработка
+## Development
 
-Проект создаётся в коллаборации с ИИ. Это эксперимент по использованию современных AI-инструментов для разработки desktop-приложений.
+This project is being built in collaboration with AI. It is an experiment in using modern AI tools for desktop application development.
 
-Если тебе интересно наблюдать за процессом создания редактора "с нуля" с использованием ИИ — можешь следить за коммитами.
+If you're interested in following the process of building an editor from scratch with AI assistance, you can track the commits.
