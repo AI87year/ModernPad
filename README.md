@@ -1,43 +1,59 @@
 # ModernPad
 
-A modern, native Windows text and code editor built with **WinUI 3** and **Windows App SDK**, inspired by the spirit and simplicity of Notepad++.
+**ModernPad** — это попытка создать современный нативный текстовый и кодовый редактор для Windows, вдохновлённый философией и удобством Notepad++.
 
-## Goals
+Проект разрабатывается с активным использованием искусственного интеллекта. Цель — не просто повторить старый редактор, а переосмыслить его с использованием современных технологий Windows, сохранив при этом лёгкость, скорость и привычный workflow.
 
-- Native Windows 11 experience (Fluent Design, Mica, smooth animations)
-- Lightweight and fast
-- Familiar tabbed editing experience
-- Powerful code editing capabilities
-- Clean, maintainable codebase
+## Идея проекта
 
-## Tech Stack
+Notepad++ уже много лет остаётся одним из самых любимых редакторов среди разработчиков благодаря своей простоте, скорости и богатым возможностям. Однако он построен на классическом Win32 API, который уже устарел.
 
-- **WinUI 3** (Windows App SDK)
+**ModernPad** — это попытка создать редактор, который:
+- Использует современный стек Windows (WinUI 3 + Windows App SDK)
+- Предоставляет нативный опыт Windows 11 (Fluent Design, Mica, Acrylic, современные анимации)
+- Сохраняет дух Notepad++: лёгкость, скорость, удобство работы с вкладками и кодом
+- Разрабатывается с помощью ИИ, чтобы ускорить создание и экспериментировать с архитектурой
+
+## Технологии
+
+- **WinUI 3** + **Windows App SDK** — современный UI-фреймворк от Microsoft
 - **.NET 8**
-- WebView2 + Monaco Editor (for rich code editing)
+- **WebView2** + **Monaco Editor** — для мощного редактирования кода с подсветкой синтаксиса
 - C# / XAML
 
-## Project Status
+## Особенности подхода
 
-Early development stage. Currently building the foundation.
+- Максимальное использование нативных возможностей Windows 11
+- Чистая и поддерживаемая архитектура
+- Разработка с активным участием ИИ (архитектура, генерация кода, рефакторинг)
+- Открытый исходный код (MIT)
 
-## License
+## Текущий статус
 
-[MIT License](LICENSE)
+Проект находится на ранней стадии разработки. Сейчас идёт работа над базовой архитектурой:
+- Система вкладок
+- Меню
+- Интеграция редактора кода (Monaco)
+- Работа с файлами
 
-## Contributing
+## Roadmap
 
-Contributions are welcome! Feel free to open issues or pull requests.
+- [x] Базовый интерфейс на WinUI 3
+- [x] Система вкладок
+- [ ] Полноценная интеграция Monaco Editor
+- [ ] Открытие и сохранение файлов
+- [ ] Переключение языка подсветки синтаксиса
+- [ ] Тёмная/светлая тема + Mica
+- [ ] Локализация (Русский + English)
+- [ ] Настройки
+- [ ] Find & Replace
 
-## Roadmap (initial ideas)
+## Лицензия
 
-- [ ] Basic tabbed interface
-- [ ] File open / save
-- [ ] Integrate Monaco Editor via WebView2
-- [ ] Syntax highlighting for common languages
-- [ ] Settings and themes
-- [ ] Find / Replace
+Проект распространяется под лицензией **MIT**.
 
----
+## Разработка
 
-> This project is being developed collaboratively with AI assistance.
+Проект создаётся в коллаборации с ИИ. Это эксперимент по использованию современных AI-инструментов для разработки desktop-приложений.
+
+Если тебе интересно наблюдать за процессом создания редактора "с нуля" с использованием ИИ — можешь следить за коммитами.
