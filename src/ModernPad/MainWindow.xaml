@@ -8,7 +8,45 @@
     Title="ModernPad">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Menu Bar -->
+        <MenuBar Grid.Row="0">
+            <!-- File Menu -->
+            <MenuBarItem Title="File">
+                <MenuFlyoutItem Text="New" Click="Menu_New_Click"/>
+                <MenuFlyoutItem Text="Open..." Click="Menu_Open_Click"/>
+                <MenuFlyoutSeparator/>
+                <MenuFlyoutItem Text="Save" Click="Menu_Save_Click"/>
+                <MenuFlyoutItem Text="Save As..." Click="Menu_SaveAs_Click"/>
+                <MenuFlyoutSeparator/>
+                <MenuFlyoutItem Text="Exit" Click="Menu_Exit_Click"/>
+            </MenuBarItem>
+
+            <!-- Language / Syntax Menu -->
+            <MenuBarItem Title="Language">
+                <MenuFlyoutItem Text="C#" Tag="csharp" Click="Menu_Language_Click"/>
+                <MenuFlyoutItem Text="C++" Tag="cpp" Click="Menu_Language_Click"/>
+                <MenuFlyoutItem Text="Python" Tag="python" Click="Menu_Language_Click"/>
+                <MenuFlyoutItem Text="JavaScript" Tag="javascript" Click="Menu_Language_Click"/>
+                <MenuFlyoutItem Text="Plain Text" Tag="plaintext" Click="Menu_Language_Click"/>
+            </MenuBarItem>
+
+            <!-- View / Localization (UI Language) -->
+            <MenuBarItem Title="View">
+                <MenuBarItem Title="UI Language">
+                    <MenuFlyoutItem Text="English" Tag="en" Click="Menu_UILanguage_Click"/>
+                    <MenuFlyoutItem Text="Русский" Tag="ru" Click="Menu_UILanguage_Click"/>
+                </MenuBarItem>
+            </MenuBarItem>
+        </MenuBar>
+
+        <!-- Tabs -->
         <TabView x:Name="MainTabView"
+                 Grid.Row="1"
                  IsAddTabButtonVisible="True"
                  AddTabButtonClick="MainTabView_AddTabButtonClick"
                  TabCloseRequested="MainTabView_TabCloseRequested"
